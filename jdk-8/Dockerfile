@@ -24,10 +24,10 @@ RUN mkdir -p /usr/share/maven /usr/share/maven/ref \
 		&& mv /usr/share/maven/conf/settings.xml /usr/share/maven/conf/settings1.xml
 		
 
-# copy maven settings
-COPY  settings.xml /usr/share/maven/conf/
+# Copy maven settings
+COPY  settings.xml /usr/share/maven/conf/ 
 
-# copy the sti scripts
+# Copy the sti scripts
 COPY ./.sti/bin/ /usr/local/sti
 
 RUN mkdir -p /opt/openshift && \
