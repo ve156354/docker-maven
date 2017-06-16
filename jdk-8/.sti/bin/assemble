@@ -121,6 +121,10 @@ elif [ -f "$LOCAL_SOURCE_DIR/pom.xml" ]; then
   if [ -d "$HOME/.m2/repository" ]; then
     rm -r "$HOME/.m2/repository"
   fi
+  
+  #if [ -d "/opt/app-root/src/source/?/.m2/repository" ]; then
+    rm -r "/opt/app-root/src/source/?/.m2/repository"
+  #fi
 
   popd &> /dev/null
 
